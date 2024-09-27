@@ -25,6 +25,16 @@ Permasalahan ini akan dianalisis dengan meninjau data untuk menemukan pola-pola 
 
 Setelah pola-pola tersebut diidentifikasi, langkah berikutnya adalah merancang model regresi untuk memprediksi harga mobil bekas secara akurat. Model ini akan membantu marketplace menentukan harga yang kompetitif, mencegah terjadinya harga yang terlalu tinggi atau terlalu rendah. Dengan estimasi harga yang lebih tepat, diharapkan keputusan jual-beli dapat dilakukan secara lebih efisien dan menguntungkan bagi penjual maupun pembeli.
 
+## Evaluasi Metrik
+Dalam pengembangan model **Machine Learning** ini, beberapa **metrik evaluasi** yang digunakan adalah sebagai berikut:
+
+- **RMSE (Root Mean Squared Error)**: Menghitung rata-rata akar kuadrat dari kesalahan prediksi.
+- **MAE (Mean Absolute Error)**: Mengukur rata-rata dari nilai absolut kesalahan prediksi.
+- **MAPE (Mean Absolute Percentage Error)**: Menghitung rata-rata persentase kesalahan yang dihasilkan oleh model regresi.
+- **R-Square (R²)**: Menunjukkan seberapa banyak variasi nilai **Y** yang dapat dijelaskan oleh model yang dibangun.
+
+Model akan semakin baik dalam memprediksi **harga mobil bekas** apabila nilai **R-Square** mendekati 1 dan nilai **RMSE**, **MAE**, serta **MAPE** semakin kecil. Dengan begitu, kesalahan prediksi bisa diminimalkan, dan akurasi model dalam menentukan harga mobil bekas dapat meningkat sesuai dengan keterbatasan fitur yang digunakan.
+
 ## Kesimpulan
 Model Gradient Boosting Regressor dengan pemilihan fitur otomatis menunjukkan performa yang cukup baik dalam memprediksi harga mobil. Setelah melalui tahap preprocessing data dan hyperparameter tuning, model ini menggunakan fitur-fitur yang paling signifikan seperti tahun pembuatan, ukuran mesin, dan jarak tempuh untuk memaksimalkan akurasi prediksi. Meskipun terjadi sedikit penurunan performa setelah tuning dengan nilai R-Square sebesar 0.3367, model ini tetap mampu memberikan wawasan penting tentang faktor-faktor utama yang memengaruhi harga kendaraan. Dengan peningkatan lebih lanjut dalam penanganan outlier dan tuning parameter yang lebih tepat, model ini diharapkan dapat membantu perusahaan dalam meningkatkan keakuratan prediksi harga dan mengoptimalkan strategi harga kendaraan di pasar.
 
